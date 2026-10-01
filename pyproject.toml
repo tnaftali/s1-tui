@@ -1,0 +1,25 @@
+[project]
+name = "s1"
+version = "0.1.0"
+description = "Type a state + question, see the typed System One decision and its confidence."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "textual>=8.2.8",
+]
+
+[project.optional-dependencies]
+# the local laya backend needs MLX (Apple Silicon). jev-only users skip it.
+local = ["laya-mlx>=0.2.0"]
+
+[project.scripts]
+s1 = "s1:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["s1.py"]

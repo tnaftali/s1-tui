@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# runtime decision log (per-machine) — may contain real/internal states; never commit
+s1_runs.jsonl
+
+# macOS junk
+.DS_Store
