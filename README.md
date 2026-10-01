@@ -36,13 +36,13 @@ Needs [uv](https://docs.astral.sh/uv/). The default install is **jev-only** (wor
 anywhere). The local `laya` backend is an opt-in extra and needs **Apple Silicon**.
 
 ```bash
-git clone https://github.com/tnaftali/s1 s1 && cd s1
+git clone https://github.com/tnaftali/s1-tui s1 && cd s1
 
 uv run s1                 # jev-only (hosted; needs an API key, see below)
 uv run --extra local s1   # + local laya backend (Apple Silicon, downloads weights once)
 
 # …or run straight from git, no clone:
-uvx --from git+https://github.com/tnaftali/s1 s1
+uvx --from git+https://github.com/tnaftali/s1-tui s1
 ```
 
 For the hosted **jev** backend set a key (no local model needed):
