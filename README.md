@@ -2,7 +2,7 @@
 
 A terminal UI for **System One** typed decisions. Type a *state* and a *question*,
 get back a typed answer — yes/no, a pick, or a score — with a calibrated confidence
-and the full probability spread. No prose to parse, ~0 generated tokens.
+and the full probability spread.
 
 ![s1 main screen](docs/main.png)
 
@@ -107,7 +107,3 @@ In one independent benchmark (308 human-labelled cases), `laya` and `jev` were t
 calibration standouts — expected calibration error ≈ 0.07, roughly half that of the
 other local models tested. Calibration is dataset-dependent, so validate the threshold
 on your own data before trusting it.
-
----
-
-*Screenshots are real terminal captures. Reproduce any scene with `S1_DEMO=main|choice|score|model-picker uv run s1` (preloads a fixed state + seeded history, no model load) and grab the window.*
