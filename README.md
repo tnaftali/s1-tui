@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/icon-512.png" width="96" alt="s1 icon"></p>
+
 # s1
 
 A terminal UI for **System One** typed decisions. Type a *state* and a *question*,
