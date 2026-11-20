@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><rect width="96" height="96" fill="#0e1a33"/><path d="M26 32l20 16-20 16" fill="none" stroke="#7ea4ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 66h22" stroke="#7ea4ff" stroke-width="8" stroke-linecap="round"/></svg>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6ecfa"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset=".18" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glyph" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="740">
+      <stop offset="0" stop-color="#4f8bff"/>
+      <stop offset="1" stop-color="#1550d6"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <g id="g" fill="none" stroke-width="100" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M262 316L478 512L262 708"/>
+      <path d="M572 700H770"/>
+    </g>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#sheen)" opacity=".6"/>
+  <use href="#g" stroke="#1e66f5" opacity=".45" filter="url(#glow)"/>
+  <use href="#g" stroke="url(#glyph)"/>
+</svg>
